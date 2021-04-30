@@ -34,10 +34,14 @@ def init_window(_window: Tk):
     _window.maxsize(720, 480)
     _window.title('sPYceTraders')
 
+def frame_login(_window):
+    Frame(_window,bg="blue").pack(fill=BOTH,expand=True)
+
 
 if __name__ == '__main__':
     window = Tk()
     init_window(window)
+    frame_login(window)
     print(get_status())
     username = 'darleenax'
     token = 'fb4ba70e-a0ba-4f8e-9152-b4f3ba378dc7'
