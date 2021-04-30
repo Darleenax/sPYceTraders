@@ -3,7 +3,7 @@
 * Display server's status
 * Enter a name/validate
 * Save user's token (file? json?)
-* Display player's info
+* Display player's info (username, money,...)
 * Display list of available loans
 * Get a loan
 * Display list of available ships
