@@ -1,6 +1,12 @@
+import requests
 from tkinter import *
 
-import requests
+# TODO
+# - Empty window
+# - Display status
+# - Enter a name
+# - Display player's info
+# - Display list of available ship
 
 
 def get_status():
@@ -34,10 +40,14 @@ def init_window(_window: Tk):
     _window.maxsize(720, 480)
     _window.title('sPYceTraders')
 
+def frame_login(_window):
+    Frame(_window,bg="blue").pack(fill=BOTH,expand=True)
+
 
 if __name__ == '__main__':
     window = Tk()
     init_window(window)
+    frame_login(window)
     print(get_status())
     username = 'darleenax'
     token = 'fb4ba70e-a0ba-4f8e-9152-b4f3ba378dc7'
@@ -46,3 +56,4 @@ if __name__ == '__main__':
     print(post_username(username))
     window.mainloop()
 
+    # token : cde3bb98-0e31-4a0b-8041-cf701070a775
