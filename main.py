@@ -41,8 +41,20 @@ def init_window(_window: Tk):
     _window.title('sPYceTraders')
 
 def frame_login(_window):
-    Frame(_window,bg="blue").pack(fill=BOTH,expand=True)
+    F1 = Frame(_window, bg="blue")
+    F1.pack(fill=BOTH, expand=True)
 
+    label = Label(F1, text="sPYceTraders", bg="blue", fg="white", font=("Comic", 50))
+    label.place(relx=0.5, rely=0.15, anchor=CENTER)
+
+    labelname = Label(F1, text="Enter your name :", bg="blue", fg="white", font=("Comic", 20))
+    labelname.place(relx=0.5, rely=0.4, anchor=CENTER)
+
+    name = Entry(F1, textvariable=F1, justify="center", font=("Comic", 20))
+    name.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    button = Button(F1, text="Connect !", font=("Comic", 15))
+    button.place(relx=0.5, rely=0.7, anchor=CENTER)
 
 if __name__ == '__main__':
     window = Tk()
